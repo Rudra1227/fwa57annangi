@@ -15,10 +15,9 @@ router.get('/', function (req, res, next) {
         }
         console.log(value);
         res.writeHead(200, { 'Content-Type': 'text/html' });
-        res.write('Math.abs() applied to ' + value + ' is ' + Math.abs(value))
-        res.write('<br/>Math.acos() applied to ' + value + ' is ' + Math.acos(value))
-        res.write('<br/>Math.sin() applied to ' + value + ' is ' + Math.sin(value))
-        res.write('<br/>Math.sinh() applied to ' + value + ' is ' + Math.sinh(value))
+        res.write('Math.atan() applied to ' + value + ' is ' + Math.atan(value))
+        res.write('<br/>Math.exp() applied to ' + value + ' is ' + Math.exp(value))
+        res.write('<br/>Math.expm1() applied to ' + value + ' is ' + Math.expm1(value))
         res.end()
     }
 });
